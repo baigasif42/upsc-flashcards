@@ -32,3 +32,5 @@ if (process.env.NODE_ENV === 'production') {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+// backend/app.js (add this line)
+app.use('/api/users', require('./routes/userRoutes'));
